@@ -44,6 +44,19 @@
 // ** with behavioral changes here.                                       **
 // *************************************************************************
 
+// Define concepts for the different integer types
+template <typename T>
+concept Signed32Bit = std::is_signed_v<T> && (sizeof(T) == 4);
+
+template <typename T>
+concept Unsigned32Bit = std::is_unsigned_v<T> && (sizeof(T) == 4);
+
+template <typename T>
+concept Signed64Bit = std::is_signed_v<T> && (sizeof(T) == 8);
+
+template <typename T>
+concept Unsigned64Bit = std::is_unsigned_v<T> && (sizeof(T) == 8);
+
 template <typename T, ENABLE_IF(std::is_signed<T>::value), ENABLE_IF(sizeof(T) == 4)> // signed 32-bit
 inline bool parse_integer_impl(const char *s, char **endptr, int base, T* result) {
   // Don't use strtol -- on 64-bit builds, "long" could be either 32- or 64-bits
