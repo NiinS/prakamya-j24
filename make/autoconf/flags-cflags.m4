@@ -591,7 +591,7 @@ AC_DEFUN([FLAGS_SETUP_CFLAGS_HELPER],
 
   # CXXFLAGS C++ language level for all of JDK, including Hotspot.
   if test "x$TOOLCHAIN_TYPE" = xgcc || test "x$TOOLCHAIN_TYPE" = xclang; then
-    LANGSTD_CXXFLAGS="-std=c++23 -Wno-error -Wno-error=volatile -Wno-error=deprecated-enum-enum-conversion"
+    LANGSTD_CXXFLAGS="-std=c++26 -Wno-error -Wno-error=volatile -Wno-error=deprecated-enum-enum-conversion"
   elif test "x$TOOLCHAIN_TYPE" = xmicrosoft; then
     LANGSTD_CXXFLAGS="-std:c++14"
   else
