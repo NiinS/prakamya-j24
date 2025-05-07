@@ -47,6 +47,16 @@ soon and thus missing the fast evolution of C++ language.
       <td>((benchmark link))</td>
       <td>SFINAE replaced with concepts</td>
     </tr>
+    <tr>
+      <td>(more features...)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>((benchmark link))</td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
 </details>
@@ -77,6 +87,13 @@ Features which were deprecated OR are no longer supported in the latest C++ stan
       <td>-Werror=deprecated-enum-enum-conversion</td>
       <td>In Progress</td>
       <td><a href="https://github.com/NiinS/prakamya-j24/issues/2">#1</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(more...)</td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td></td>
     </tr>
   </tbody>
