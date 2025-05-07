@@ -1,0 +1,126 @@
+<div align="center">
+
+[//]: # (<br>)
+  <img src="imgs/green-minimal.png" alt="Prakamya-25 Linux x86 64 bit JDK/JVM" width="800" height="auto" />
+  <h1>Prakamya-25</h1>
+  <h4>Linux x86 64-bit JVM/JDK 25 coded and built with C++26 (&higher) language features and standard lib</h4>
+<hr/>
+</div>
+
+<div>
+<details>
+<summary>Background</summary>
+<p style="font-size:10px;font-family:arial,serif">
+Prakamya delivers an opinionated (&incremental) Linux (x86) based 64-bit JVM infused with modern C++ standards (>= C++26 and higher) in the JVM code
+and the build process. This approach allows JVM deployments on 64-bit Linux to benefit from an enhanced C++ feature set, performance
+improvements, and the cutting edge of C++ language design directly within the JVM.
+</p>
+<p style="font-size:7px;font-family:arial,serif">
+Note that standard JVM implementations (e.g. OpenJDK) are based on C++14 (in the JVM code and build process), that is unlikely to change anytime 
+soon and thus missing the fast evolution of C++ language. 
+</p>
+</details>
+
+<details>
+<summary>Feature Coverage</summary>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>JVM Feature</th>
+      <th>Module</th>
+      <th>Status</th>
+      <th>Issue Tracker</th>
+      <th>Applicable C++ standard version</th>
+      <th>Benchmarks</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SH-1</td>
+      <td>Shared</td>
+      <td>Param parsing</td>
+      <td>In Progress</td>
+      <td><a href="https://github.com/p-series-jvms/prakamya-25/issues/2">#2</a></td>
+      <td>C++20</td>
+      <td>((benchmark link))</td>
+      <td>SFINAE replaced with concepts</td>
+    </tr>
+  </tbody>
+</table>
+</details>
+
+<details>
+<summary>Deprecated Feature Transformation</summary>
+Features which were deprecated OR are no longer supported in the latest C++ standard.
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Feature</th>
+      <th>Status</th>
+      <th>Issue Tracker</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DF-1</td>
+      <td>-Werror=volatile</td>
+      <td>In Progress</td>
+      <td><a href="https://github.com/p-series-jvms/prakamya-25/issues/1">#1</a></td>
+      <td>Deprecated in C++17 and removed in C++20</td>
+    </tr>
+    <tr>
+      <td>DF-2</td>
+      <td>-Werror=deprecated-enum-enum-conversion</td>
+      <td>In Progress</td>
+      <td><a href="https://github.com/p-series-jvms/prakamya-25/issues/1">#1</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</details>
+
+<details>
+<summary>Pre-Built Prakamya Binaries</summary>
+<table>
+  <thead>
+    <tr>
+      <th>Release Date</th>
+      <th>Version</th>
+      <th>Download Link</th>
+      <th>Supported Features</th>
+      <th>Minimum ToolChain Required</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td><td>
+      <td><td>
+      <td>GC-1,DF-1</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</details>
+
+</div>
+
+<hr/>
+Standard build instructions apply (needs a GCC compiler supporting >= C++26)
+For build instructions please see the
+[online documentation](https://openjdk.org/groups/build/doc/building.html),
+or either of these files:
+
+- [doc/building.html](doc/building.html) (html version)
+- [doc/building.md](doc/building.md) (markdown version)
+
+See <https://openjdk.org/> for more information about the OpenJDK
+Community and the JDK and see <https://bugs.openjdk.org> for JDK issue
+tracking.
+
