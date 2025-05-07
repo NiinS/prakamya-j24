@@ -98,12 +98,12 @@ Features which were deprecated OR are no longer supported in the latest C++ stan
   </thead>
   <tbody>
     <tr>
-      <td></td>
-      <td><td>
-      <td><td>
+      <td>TBD</td>
+      <td>TBD</td>
+      <td>TBD</td>
       <td><a href="https://github.com/NiinS/prakamya-j24/milestone/1">Milestone 1</a></td>
-      <td></td>
-      <td></td>
+      <td>TBD</td>
+      <td>TBD</td>
     </tr>
   </tbody>
 </table>
