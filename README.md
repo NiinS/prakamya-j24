@@ -1,7 +1,7 @@
 <div align="center">
 
 [//]: # (<br>)
-  <img src="imgs/green-minimal.png" alt="Prakamya-25 Linux x86 64 bit JDK/JVM" width="800" height="auto" />
+  <img src="imgs/green-minimal.png" alt="Prakamya-25 Linux x86 64 bit JDK/JVM" width="900" height="300" />
   <h1>Prakamya-25</h1>
   <h4>Linux x86 64-bit JVM/JDK 25 coded and built with C++26 (&higher) language features and standard lib</h4>
 <hr/>
