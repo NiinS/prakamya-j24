@@ -1,9 +1,9 @@
 <div align="center">
 
 [//]: # (<br>)
-  <img src="imgs/green-minimal.png" alt="Prakamya-25 Linux x86 64 bit JDK/JVM" width="900" height="300" />
-  <h1>Prakamya-25</h1>
-  <h4>Linux x86 64-bit JVM/JDK 25 coded and built with C++26 (&higher) language features and standard lib</h4>
+  <img src="imgs/green-minimal.png" alt="Prakamya-j24 Linux x86 64 bit JDK/JVM" width="1000" height="auto" />
+  <h1>Prakamya-j24</h1>
+  <h4>Linux x86 64-bit JVM 24 OpenJDK baseline transformation (VM code and build) via C++20..26 (&higher) language features and standard lib</h4>
 <hr/>
 </div>
 
@@ -11,9 +11,9 @@
 <details>
 <summary>Background</summary>
 <p style="font-size:10px;font-family:arial,serif">
-Prakamya delivers an opinionated (&incremental) Linux (x86) based 64-bit JVM infused with modern C++ standards (>= C++26 and higher) in the JVM code
-and the build process. This approach allows JVM deployments on 64-bit Linux to benefit from an enhanced C++ feature set, performance
-improvements, and the cutting edge of C++ language design directly within the JVM.
+Prakamya-j24 is an opinionated (& incrementally transformed) Linux (x86) based 64-bit JVM infused with modern C++ standards (>= C++20..26) 
+in the JVM internal code and the build process. This approach allows JVM deployments on 64-bit Linux to benefit from an enhanced C++ feature set, 
+performance improvements, and the cutting edge of C++ language design directly within the JVM.
 </p>
 <p style="font-size:7px;font-family:arial,serif">
 Note that standard JVM implementations (e.g. OpenJDK) are based on C++14 (in the JVM code and build process), that is unlikely to change anytime 
