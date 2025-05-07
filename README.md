@@ -91,7 +91,7 @@ Features which were deprecated OR are no longer supported in the latest C++ stan
       <th>Release Date</th>
       <th>Version</th>
       <th>Download Link</th>
-      <th>Supported Features</th>
+      <th>Milestones Achieved</th>
       <th>Minimum ToolChain Required</th>
       <th>Notes</th>
     </tr>
@@ -101,14 +101,13 @@ Features which were deprecated OR are no longer supported in the latest C++ stan
       <td></td>
       <td><td>
       <td><td>
-      <td>GC-1,DF-1</td>
+      <td><a href="https://github.com/NiinS/prakamya-j24/milestone/1">Milestone 1</a></td>
       <td></td>
       <td></td>
     </tr>
   </tbody>
 </table>
 </details>
-
 </div>
 
 <hr/>
@@ -124,3 +123,5 @@ See <https://openjdk.org/> for more information about the OpenJDK
 Community and the JDK and see <https://bugs.openjdk.org> for JDK issue
 tracking.
 
+<hr/>
+Contact: Nitin Singh (sin.nitins@gmail.com) for any enquiries or suggestions. Feel free to raise an enhancement request via the issue tracker.
