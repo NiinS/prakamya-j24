@@ -124,4 +124,4 @@ Community and the JDK and see <https://bugs.openjdk.org> for JDK issue
 tracking.
 
 <hr/>
-Contact: Nitin Singh (sin.nitins@gmail.com) for any enquiries or suggestions. Feel free to raise an enhancement request via the issue tracker.
+Contact: sin.nitins@gmail.com (nitin-s) for any enquiries or suggestions. Feel free to raise an enhancement request via the issue tracker.
