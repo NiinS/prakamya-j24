@@ -42,7 +42,7 @@ soon and thus missing the fast evolution of C++ language.
       <td>Shared</td>
       <td>Param parsing</td>
       <td>In Progress</td>
-      <td><a href="https://github.com/p-series-jvms/prakamya-25/issues/2">#2</a></td>
+      <td><a href="https://github.com/NiinS/prakamya-j24/issues/1">#2</a></td>
       <td>C++20</td>
       <td>((benchmark link))</td>
       <td>SFINAE replaced with concepts</td>
@@ -69,14 +69,14 @@ Features which were deprecated OR are no longer supported in the latest C++ stan
       <td>DF-1</td>
       <td>-Werror=volatile</td>
       <td>In Progress</td>
-      <td><a href="https://github.com/p-series-jvms/prakamya-25/issues/1">#1</a></td>
+      <td><a href="https://github.com/NiinS/prakamya-j24/issues/2">#1</a></td>
       <td>Deprecated in C++17 and removed in C++20</td>
     </tr>
     <tr>
       <td>DF-2</td>
       <td>-Werror=deprecated-enum-enum-conversion</td>
       <td>In Progress</td>
-      <td><a href="https://github.com/p-series-jvms/prakamya-25/issues/1">#1</a></td>
+      <td><a href="https://github.com/NiinS/prakamya-j24/issues/2">#1</a></td>
       <td></td>
     </tr>
   </tbody>
