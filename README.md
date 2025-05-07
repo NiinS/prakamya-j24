@@ -42,7 +42,7 @@ soon and thus missing the fast evolution of C++ language.
       <td>Shared</td>
       <td>Param parsing</td>
       <td>In Progress</td>
-      <td><a href="https://github.com/NiinS/prakamya-j24/issues/1">#2</a></td>
+      <td><a href="https://github.com/NiinS/prakamya-j24/issues/3">#2</a></td>
       <td>C++20</td>
       <td>((benchmark link))</td>
       <td>SFINAE replaced with concepts</td>
