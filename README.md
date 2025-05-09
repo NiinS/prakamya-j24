@@ -127,18 +127,19 @@ Features which were deprecated OR are no longer supported in the latest C++ stan
 </details>
 </div>
 
-<hr/>
+<details>
+<summary>Building Prakamya</summary>
 Standard build instructions apply (needs a GCC compiler supporting >= C++26)
-For build instructions please see the
-[online documentation](https://openjdk.org/groups/build/doc/building.html),
-or either of these files:
 
+For build instructions please see the
 - [doc/building.html](doc/building.html) (html version)
 - [doc/building.md](doc/building.md) (markdown version)
 
-See <https://openjdk.org/> for more information about the OpenJDK
-Community and the JDK and see <https://bugs.openjdk.org> for JDK issue
-tracking.
+OR
+
+[online documentation](https://openjdk.org/groups/build/doc/building.html)
+
+</details>
 
 <hr/>
 Contact: sin.nitins@gmail.com (nitin-s) for any enquiries or suggestions. Feel free to raise an enhancement request via the issue tracker.
