@@ -141,5 +141,9 @@ OR
 
 </details>
 
+<details>
+<summary>License</summary>
+A Prakamya series JVM transforms an LTS version of OpenJDK (e.g., Prakamya-j24 applies to OpenJDK-24) and keeps the licensing terms same as OpenJDK which is GNU/GPL. 
+</details>
 <hr/>
 Contact: sin.nitins@gmail.com (nitin-s) for any enquiries or suggestions. Feel free to raise an enhancement request via the issue tracker.
