@@ -57,7 +57,7 @@ concept Signed64Bit = std::is_signed_v<T> && (sizeof(T) == 8);
 template <typename T>
 concept Unsigned64Bit = std::is_unsigned_v<T> && (sizeof(T) == 8);
 
-template <typename T, ENABLE_IF(std::is_signed<T>::value), ENABLE_IF(sizeof(T) == 4)> // signed 32-bit
+template <Signed32Bit T>
 inline bool parse_integer_impl(const char *s, char **endptr, int base, T* result) {
   // Don't use strtol -- on 64-bit builds, "long" could be either 32- or 64-bits
   // so the range tests could be tautological and might cause compiler warnings.
@@ -71,7 +71,7 @@ inline bool parse_integer_impl(const char *s, char **endptr, int base, T* result
   return true;
 }
 
-template <typename T, ENABLE_IF(!std::is_signed<T>::value), ENABLE_IF(sizeof(T) == 4)> // unsigned 32-bit
+template <Unsigned32Bit T>
 inline bool parse_integer_impl(const char *s, char **endptr, int base, T* result) {
   if (s[0] == '-') {
     return false;
@@ -87,14 +87,14 @@ inline bool parse_integer_impl(const char *s, char **endptr, int base, T* result
   return true;
 }
 
-template <typename T, ENABLE_IF(std::is_signed<T>::value), ENABLE_IF(sizeof(T) == 8)> // signed 64-bit
+template <Signed64Bit T>
 inline bool parse_integer_impl(const char *s, char **endptr, int base, T* result) {
   errno = 0; // errno is thread safe
   *result = strtoll(s, endptr, base);
   return errno == 0;
 }
 
-template <typename T, ENABLE_IF(!std::is_signed<T>::value), ENABLE_IF(sizeof(T) == 8)> // unsigned 64-bit
+template <Unsigned64Bit T>
 inline bool parse_integer_impl(const char *s, char **endptr, int base, T* result) {
   if (s[0] == '-') {
     return false;
