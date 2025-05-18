@@ -103,7 +103,8 @@ public:
   // explicitly passed as extra arguments. Every thread in the parallel task
   // must execute this.
   template<typename T0, typename... Ts,
-          ENABLE_IF(Conjunction<std::is_same<T0, Ts>...>::value)>
+          // ENABLE_IF(Conjunction<std::is_same<T0, Ts>...>::value)>
+          ENABLE_IF(std::conjunction<std::is_same<T0, Ts>...>::value)>
   void all_tasks_claimed(T0 first_skipped, Ts... more_skipped) {
     static_assert(std::is_convertible<T0, uint>::value, "not convertible");
     uint skipped[] = { static_cast<uint>(first_skipped), static_cast<uint>(more_skipped)... };
