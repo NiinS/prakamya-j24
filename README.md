@@ -134,8 +134,8 @@ googletest and googlemock directories, should be specified via --with-gtest. The
 ````
 
 - Detailed list of configuration options can be seen here: [Building Prakamya/JDK variants](https://openjdk.org/groups/build/doc/building.html)
-- The configuration step also points out what is missing on the system required for a successful build. If there are any missing libraries or 
-tools missing, they must be installed prior to reattempting STEP 2.
+- The configuration step also points out what is missing on the system required for a successful build. If there are any libraries or 
+tools missing, they will be highlighted and must be installed prior to reattempting STEP 2.
 
 e.g. a successful configure step looks similar to the following:
 
