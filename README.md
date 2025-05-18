@@ -8,7 +8,7 @@
 </div>
 
 <p>
-  <img src="imgs/version_info.svg" alt="Using Prakamya-j24 on Linux cmd line" width="1000" height="200" />
+  <img src="imgs/version_info.svg" alt="using Prakamya-j24 on Linux cmd line" width="1000" height="200" />
 </p>
 
 <div>
