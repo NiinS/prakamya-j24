@@ -106,6 +106,9 @@ Features which were deprecated OR are no longer supported in the latest C++ stan
 
 <details>
 <summary>Building Prakamya</summary>
+
+Ready to use Prakamya distributions can be downloaded from here: [Releases](https://github.com/NiinS/prakamya-j24/releases)
+
 Standard build instructions apply (needs a GCC compiler supporting >= C++26).
 
 #### Step 1: Checkout Prakamya
@@ -170,7 +173,7 @@ Build performance summary:
 sudo make images
 ````
 
-A successful build will create the JVM/JDK under build dir names in an output folder e.g. 'linux-x86_64-server-release' as seen here:
+A successful build will create the JVM/JDK under build dir in an output folder e.g. 'linux-x86_64-server-release' as seen here:
 ````bash
 ... (only last few lines) ...
 Creating jdk.jlink.jmod
