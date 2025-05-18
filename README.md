@@ -105,43 +105,85 @@ Features which were deprecated OR are no longer supported in the latest C++ stan
 </details>
 
 <details>
-<summary>Pre-Built Prakamya Binaries</summary>
-<table>
-  <thead>
-    <tr>
-      <th>Release Date</th>
-      <th>Version</th>
-      <th>Download Link</th>
-      <th>Milestones Achieved</th>
-      <th>Minimum ToolChain Required</th>
-      <th>Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td><a href="https://github.com/NiinS/prakamya-j24/milestone/1">Milestone 1</a></td>
-      <td>TBD</td>
-      <td>TBD</td>
-    </tr>
-  </tbody>
-</table>
-</details>
-</div>
-
-<details>
 <summary>Building Prakamya</summary>
-Standard build instructions apply (needs a GCC compiler supporting >= C++26)
+Standard build instructions apply (needs a GCC compiler supporting >= C++26).
 
-For build instructions please see the
-- [doc/building.html](doc/building.html) (html version)
-- [doc/building.md](doc/building.md) (markdown version)
+#### Step 1: Checkout Prakamya
+````bash
+git clone https://www.google.com/search?q=https://github.com/NiinS/prakamya-j24.git
+cd prakamya-j24
+````
 
-OR
+#### Step 2: Configure to build JVM/JDK with tests
+````bash
+bash configure --with-jvm-variants=server --with-debug-level=release --with-jtreg=<path to jtreg home> --with-gtest=<path to Google tests library source>
 
-[online documentation](https://openjdk.org/groups/build/doc/building.html)
+where,
+
+'--with-jtreg' = most of the JDK tests are using the JTReg test framework. Make sure that your configuration knows where to find your installation of JTReg. 
+If this is not picked up automatically, use the --with-jtreg=<path to jtreg home> option to point to the JTReg framework. 
+Note that this option should point to the JTReg home, i.e. the top directory, containing lib/jtreg.jar etc. 
+
+'--with-gtest' = Building of Hotspot Gtest suite requires the source code of Google Test framework. The top directory, which contains both 
+googletest and googlemock directories, should be specified via --with-gtest. The minimum supported version of Google Test is 1.14.0
+
+'with-jvm-variants' = server variant of JVM
+
+'--with-debug-level' = release build of JVM
+
+````
+
+- Detailed list of configuration options can be seen here: [Building Prakamya/JDK variants](https://openjdk.org/groups/build/doc/building.html)
+- The configuration step also points out what is missing on the system required for a successful build. If there are any missing libraries or 
+tools missing, they must be installed prior to reattempting STEP 2.
+
+e.g. a successful configure step looks similar to the following:
+
+````bash
+The existing configuration has been successfully updated in
+/home/nitin/work/code/cpp/tools/prakamya-j24/build/linux-x86_64-server-release
+using configure arguments '--with-jvm-variants=server --with-debug-level=release --with-jtreg=/home/nitin/work/code/cpp/tools/jtreg/build/images/jtreg --with-gtest=/home/nitin/work/code/cpp/tools/googletest'.
+
+Configuration summary:
+* Name:           linux-x86_64-server-release
+* Debug level:    release
+* HS debug level: product
+* JVM variants:   server
+* JVM features:   server: 'cds compiler1 compiler2 dtrace epsilongc g1gc jfr jni-check jvmci jvmti management parallelgc serialgc services shenandoahgc vm-structs zgc' 
+* OpenJDK target: OS: linux, CPU architecture: x86, address length: 64
+* Version string: 25-internal-adhoc.nitin.prakamya-j24 (25-internal)
+* Source date:    1747536243 (2025-05-18T02:44:03Z)
+
+Tools summary:
+* Boot JDK:       openjdk version "25-ea" 2025-09-16 OpenJDK Runtime Environment (build 25-ea+21-2530) OpenJDK 64-Bit Server VM (build 25-ea+21-2530, mixed mode, sharing) (at /usr/lib/jvm/jdk-25)
+* Toolchain:      gcc (GNU Compiler Collection)
+* C Compiler:     Version 15.1.0 (at /usr/bin/gcc)
+* C++ Compiler:   Version 15.1.0 (at /usr/bin/g++)
+
+Build performance summary:
+* Build jobs:     31
+* Memory limit:   31783 MB
+````
+
+#### Step 3: Building Prakamya image
+````bash
+sudo make images
+````
+
+A successful build will create the JVM/JDK under build dir names in an output folder e.g. 'linux-x86_64-server-release' as seen here:
+````bash
+... (only last few lines) ...
+Creating jdk.jlink.jmod
+Creating java.base.jmod
+Creating jdk image
+Creating CDS archive for jdk image for server
+Creating CDS-NOCOOPS archive for jdk image for server
+Creating CDS-COH archive for jdk image for server
+Creating CDS-NOCOOPS-COH archive for jdk image for server
+Stopping javac server
+Finished building target 'images' in configuration 'linux-x86_64-server-release'
+````
+From there the JVM can be used in usual manner as shown in the terminal usage illustration.
 
 </details>
 
