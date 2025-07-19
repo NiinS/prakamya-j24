@@ -195,4 +195,4 @@ From there the JVM can be used in usual manner as shown in the terminal usage il
 A Prakamya series JVM transforms an LTS version of OpenJDK (e.g., Prakamya-j24 applies to OpenJDK-24) and keeps the licensing terms same as OpenJDK which is GNU/GPL. 
 </details>
 <hr/>
-Contact: sin.nitins@gmail.com (nitin-s) for any enquiries or suggestions. Feel free to raise an enhancement request via the issue tracker.
+Contact: sin@nitins.dev (Nitin S) for any enquiries or suggestions. Feel free to raise an enhancement request via the issue tracker.
